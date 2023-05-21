@@ -78,7 +78,7 @@ int main()
   printArray(arr1, no);
 
   average = computeAverage(arr1, no);
-  printf("arr1의 평균: %g\n", average);
+  printf("arr1의 평균: %.4f\n", average);
 
   copySquareArray(arr2, arr1, no);
   printf("\n==== squareArray() 함수 호출후 ======\n");

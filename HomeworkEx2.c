@@ -6,7 +6,7 @@ void printArray(const int p[], int size);
 double computeAverage(const int p[], int size);
 void copySquareArray(int p1[], const int p2[], int size);
 void swapArray(int p1[], int p2[], int size);
-
+// [1] 지역 변수의 선언이 아닌가?
 int getArray(int p[])
 {
   int size;
@@ -21,10 +21,13 @@ int getArray(int p[])
 
   return size;
 }
+// [2] 왜 return 값이 size인가 ?
 
 void printArray(const int p[], int size)
+// [3] void ~ 로 함수 선언을 하는 이유가 있는가 ?
 {
   printf("{");
+  // [4] 이거 좀 잘못된 것 같은데.. 최적의 코드가 있는 것인가?
   for (int i = 0; i < size; i++)
   {
     printf("%d", p[i]);
@@ -78,7 +81,7 @@ int main()
   printArray(arr1, no);
 
   average = computeAverage(arr1, no);
-  printf("arr1의 평균: %g\n", average);
+  printf("arr1의 평균 : %g\n", average);
 
   copySquareArray(arr2, arr1, no);
   printf("\n==== squareArray() 함수 호출후 ======\n");
