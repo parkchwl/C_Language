@@ -4,7 +4,7 @@ int main()
 {
   int a, b = 0;
 
-  printf("");
+  printf("정수형 변수 입력해줘.");
   scanf("%d", &a);
 
   b = a;
