@@ -26,6 +26,7 @@ public:
     {
       std::cout << "재료가 부족하여 에스프레소를 만들 수 없습니다." << std::endl;
     }
+    show();
   }
 
   void drinkAmericano()
@@ -39,6 +40,7 @@ public:
     {
       std::cout << "재료가 부족하여 아메리카노를 만들 수 없습니다." << std::endl;
     }
+    show();
   }
 
   void drinkSugarCoffee()
@@ -53,6 +55,7 @@ public:
     {
       std::cout << "재료가 부족하여 설탕 커피를 만들 수 없습니다." << std::endl;
     }
+    show();
   }
 
   void fill()
@@ -60,6 +63,8 @@ public:
     coffee = 10;
     water = 10;
     sugar = 10;
+    std::cout << "재료를 채웠습니다." << std::endl;
+    show();
   }
 
   void show()
@@ -71,7 +76,6 @@ public:
 int main()
 {
   CoffeeMachine java(5, 8, 2);
-
   java.drinkAmericano();
   java.show();
 
@@ -84,11 +88,7 @@ int main()
   java.drinkSugarCoffee();
   java.show();
 
-  java.drinkSugarCoffee();
-  java.show();
-
   java.drinkAmericano();
-  java.show();
 
   java.fill();
   java.show();
