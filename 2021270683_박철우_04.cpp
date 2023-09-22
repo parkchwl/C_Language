@@ -25,8 +25,8 @@ public:
     else
     {
       std::cout << "재료가 부족하여 아메리카노를 만들 수 없습니다." << std::endl;
+      return;
     }
-    show(); // 커피 상태 출력
   }
 
   void drinkEspresso()
@@ -38,8 +38,8 @@ public:
     else
     {
       std::cout << "재료가 부족하여 에스프레소를 만들 수 없습니다." << std::endl;
+      return;
     }
-    show(); // 커피 상태 출력
   }
 
   void drinkSugarCoffee()
@@ -53,8 +53,8 @@ public:
     else
     {
       std::cout << "재료가 부족하여 설탕 커피를 만들 수 없습니다." << std::endl;
+      return;
     }
-    show(); // 커피 상태 출력
   }
 
   void fill()
@@ -63,7 +63,6 @@ public:
     water = 10;
     sugar = 10;
     std::cout << "재료를 다시 채웠습니다." << std::endl;
-    show(); // 커피 상태 출력
   }
 
   void show()
@@ -78,10 +77,19 @@ int main()
   java.show();
 
   java.drinkAmericano();
+  java.show();
+
   java.drinkSugarCoffee();
+  java.show();
+
   java.drinkEspresso();
+  java.show();
+
   java.drinkSugarCoffee();
+  java.show();
+
   java.drinkSugarCoffee();
+
   java.drinkAmericano();
   java.show();
 
