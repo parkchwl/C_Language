@@ -10,11 +10,11 @@ int main()
 
   cout << "5 명의 이름을 ';'으로 구분하여 입력하세요." << endl;
   cout << ">> ";
-  cin.getline(names[0], 1000, ';');
-  cin.getline(names[1], 1000, ';');
-  cin.getline(names[2], 1000, ';');
-  cin.getline(names[3], 1000, ';');
-  cin.getline(names[4], 1000);
+  getline(cin, names[0], ';');
+  getline(cin, names[1], ';');
+  getline(cin, names[2], ';');
+  getline(cin, names[3], ';');
+  getline(cin, names[4]);
 
   for (int i = 0; i < maxNames; ++i)
   {
