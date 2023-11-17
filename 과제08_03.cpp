@@ -18,7 +18,7 @@ public:
 
   double getSurfaceArea() const
   {
-    return 4.0 * 3.14159 * radius * radius;
+    return 4.0 * 3.14 * radius * radius;
   }
 };
 
