@@ -16,13 +16,6 @@ public:
   }
 
   friend Person operator+(int n, const Person &p);
-
-  Person &operator++()
-  {
-    ++weight;
-    ++height;
-    return *this;
-  }
 };
 
 Person operator+(int n, const Person &p)

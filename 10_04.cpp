@@ -18,7 +18,7 @@ public:
 
   double getArea() const
   {
-    const double pi = 3.14159265358979323846;
+    const double pi = 3.14;
     return 4.0 * pi * radius * radius;
   }
 
